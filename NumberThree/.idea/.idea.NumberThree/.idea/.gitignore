@@ -1,0 +1,13 @@
+﻿# Default ignored files
+/shelf/
+/workspace.xml
+# Rider ignored files
+/projectSettingsUpdater.xml
+/contentModel.xml
+/.idea.NumberThree.iml
+/modules.xml
+# Datasource local storage ignored files
+/../../../../../../../../../../:\Users\david\Desktop\Unity\3\NumberThree\.idea\.idea.NumberThree\.idea/dataSources/
+/dataSources.local.xml
+# Editor-based HTTP Client requests
+/httpRequests/
