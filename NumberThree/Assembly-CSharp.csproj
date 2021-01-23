@@ -50,15 +50,17 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\Movement.cs" />
      <Compile Include="Assets\First person controller\Components\Jump.cs" />
-     <Compile Include="Assets\Scripts\PlayerBall.cs" />
      <Compile Include="Assets\First person controller\FirstPersonLook.cs" />
      <Compile Include="Assets\Scripts\Player.cs" />
      <Compile Include="Assets\First person controller\Components\Zoom.cs" />
      <Compile Include="Assets\First person controller\FirstPersonMovement.cs" />
      <Compile Include="Assets\First person controller\Components\GroundCheck.cs" />
      <Compile Include="Assets\First person controller\Components\Crouch.cs" />
-     <Compile Include="Assets\Scripts\Movement.cs" />
+     <Compile Include="Assets\Scripts\FollowCamera.cs" />
+     <Compile Include="Assets\Scripts\InteractiveObject.cs" />
+     <Compile Include="Assets\Scripts\GoodBonus.cs" />
  <Reference Include="Unity.Timeline.Editor">
  <HintPath>C:/Users/david/Desktop/Unity/3/NumberThree/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>

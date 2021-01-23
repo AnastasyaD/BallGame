@@ -1,5 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.Serialization;
 
 
 namespace AnastasyaD
@@ -7,20 +6,19 @@ namespace AnastasyaD
 public class Player : MonoBehaviour
 {
 
-    [SerializeField]private float speed = 2;
-    private Vector3 _direction = Vector3.zero;
-
-    protected Player(float speed)
+    [SerializeField]private float speedRotation = 10f;
+    
+    protected Player()
     {
         throw new System.NotImplementedException();
     }
 
-    private void Update()
+    protected void Move()
     {
-        _direction.x = -Input.GetAxis("Horizontal");
-        _direction.z = -Input.GetAxis("Vertical");
-
-        transform.position += _direction * (Time.deltaTime *speed);
+        float moveHoris = -Input.GetAxis("Horizontal");
+        float moveVert = Input.GetAxis("Vertical");
+        Vector3 movement = new Vector3(moveVert, 0.0f,moveHoris);
+        transform.Rotate(movement * (speedRotation * Time.deltaTime));
     }
 }
 
