@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.SceneManagement;
 
 
 namespace AnastasyaD
@@ -11,6 +12,7 @@ namespace AnastasyaD
         private Rigidbody _rigidbody;
         private Coin[] _coins; 
         private DisplayBonuses _displayScore;
+        private const string SceneName = "SampleScene";
         
         private void Awake()
         {
@@ -24,7 +26,7 @@ namespace AnastasyaD
             if (DisplayBonuses._score == _coins.Length) 
             {
                 Time.timeScale = 0f;
-                Application.LoadLevel("SampleScene");
+                SceneManager.LoadScene (SceneName, LoadSceneMode.Single ); 
             }
         }
         

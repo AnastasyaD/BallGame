@@ -1,5 +1,4 @@
-﻿
-using System.Collections;
+﻿using System.Collections;
 using UnityEngine;
 
 
@@ -25,7 +24,6 @@ namespace AnastasyaD
         {
             yield return new WaitForSeconds(second);
             _cameraBonus.AllView();
-
         }
         
         public override void Interaction()
@@ -51,7 +49,6 @@ namespace AnastasyaD
         {
             transform.Rotate(Vector3.up * (Time.deltaTime * _speedRotation), Space.World);
         }
-
     }
 }
 
